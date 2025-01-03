@@ -10,3 +10,7 @@ func createRequest(url: URL, body: Data) -> URLRequest {
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     return request
 }
+
+func message() -> String {
+  return "Meddl Loide"
+}
