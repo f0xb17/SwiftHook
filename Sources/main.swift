@@ -1,6 +1,11 @@
 import Foundation
 import FoundationNetworking
 
+// Function to create a URLRequest with the given URL and body data
+// Parameters:
+// - url: The URL to send the request to
+// - body: The data to send in the request
+// Returns the created request
 func createRequest(url: URL, body: Data) -> URLRequest {
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
@@ -9,12 +14,15 @@ func createRequest(url: URL, body: Data) -> URLRequest {
     return request
 }
 
+// Function to create a message
+// Returns the message
 func message() -> String {
   return "Meddl Loide"
 }
 
+// Main function to execute the webhook request
 func main() {
-
+  // Discord webhook URL
   let webhookURL = ""
   guard let url = URL(string: webhookURL) else {
     print("Invalid URL")
@@ -51,5 +59,6 @@ func main() {
   semaphore.wait()
 }
 
+// Main function to execute the webhook request
 main()
 
