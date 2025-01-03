@@ -1,3 +1,11 @@
+//
+//  main.swift
+//  A Swift-based tool to send a Discord webhook.
+//
+//  Created by f0xb17 on 01/03/2025.
+//  Copyright © 2025 f0xb17. All rights reserved.
+//
+
 import Foundation
 import FoundationNetworking
 
