@@ -1,4 +1,12 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import Foundation
+import FoundationNetworking
 
-print("Hello, world!")
+import Foundation
+
+func createRequest(url: URL, body: Data) -> URLRequest {
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST"
+    request.httpBody = body
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    return request
+}
